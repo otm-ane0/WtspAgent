@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+define('LARAVEL_START', microtime(true));
+
+$autoloadPath = __DIR__ . '/vendor/autoload.php';
+
+if (!file_exists($autoloadPath)) {
+    fwrite(STDERR, "Composer autoload not found. Run: composer install\n");
+    exit(1);
+}
+
+require $autoloadPath;
+
+$app = require_once __DIR__ . '/bootstrap/app.php';
+
+$kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
+
+$status = $kernel->handle(
+    $input = new Symfony\Component\Console\Input\ArgvInput,
+    new Symfony\Component\Console\Output\ConsoleOutput
+);
+
+$kernel->terminate($input, $status);
+
+exit($status);

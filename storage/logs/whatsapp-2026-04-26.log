@@ -1,0 +1,4 @@
+[2026-04-26 01:20:49] production.INFO: Webhook verification attempt {"mode":"subscribe","token":"your_webhook_verify_token_here"} 
+[2026-04-26 01:20:49] production.INFO: Webhook verified successfully  
+[2026-04-26 01:21:02] production.INFO: Webhook received {"payload":{"object":"whatsapp_business_account","entry":[{"changes":[{"value":{"contacts":[{"profile":"Over 9 levels deep, aborting normalization"}],"messages":[{"from":"Over 9 levels deep, aborting normalization","timestamp":"Over 9 levels deep, aborting normalization","id":"Over 9 levels deep, aborting normalization","type":"Over 9 levels deep, aborting normalization","text":"Over 9 levels deep, aborting normalization"}]}}]}]}} 
+[2026-04-26 01:21:06] production.ERROR: Failed to send message {"recipient":"212600000001","error":"Malformed access token","status":401} 
