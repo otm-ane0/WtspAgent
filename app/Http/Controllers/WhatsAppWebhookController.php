@@ -99,9 +99,9 @@ class WhatsAppWebhookController extends Controller
 
     public function verify(Request $request): Response
     {
-        $mode = $request->input('hub_mode');
-        $token = $request->input('hub_verify_token');
-        $challenge = $request->input('hub_challenge');
+        $mode = $request->query('hub_mode', $request->query('hub.mode'));
+        $token = $request->query('hub_verify_token', $request->query('hub.verify_token'));
+        $challenge = $request->query('hub_challenge', $request->query('hub.challenge'));
 
         Log::channel('whatsapp')->info('Webhook verification attempt', [
             'mode' => $mode,

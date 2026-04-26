@@ -30,8 +30,9 @@ class AIService
         $this->llmModel = config('services.nvidia.llm_model', 'meta/llama-3.1-405b-instruct');
         $this->sttModel = config('services.nvidia.stt_model', 'nvidia/parakeet-rnnt-1.1b');
         $this->visionModel = config('services.nvidia.vision_model', 'microsoft/kosmos-2');
-        $this->timeout = 60;
-        $this->maxRetries = 3;
+        // Keep webhook processing under PHP execution limits and allow tuning from .env.
+        $this->timeout = (int) config('services.nvidia.timeout', 15);
+        $this->maxRetries = (int) config('services.nvidia.max_retries', 1);
 
         if (empty($this->apiKey)) {
             throw new \RuntimeException('NVIDIA API key not configured');

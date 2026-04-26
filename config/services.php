@@ -22,6 +22,8 @@ return [
         'llm_model' => env('NVIDIA_LLM_MODEL', 'meta/llama-3.1-405b-instruct'),
         'stt_model' => env('NVIDIA_STT_MODEL', 'nvidia/parakeet-rnnt-1.1b'),
         'vision_model' => env('NVIDIA_VISION_MODEL', 'microsoft/kosmos-2'),
+        'timeout' => env('NVIDIA_TIMEOUT', 15),
+        'max_retries' => env('NVIDIA_MAX_RETRIES', 1),
     ],
 
     /*
