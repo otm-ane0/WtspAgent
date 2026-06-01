@@ -383,3 +383,88 @@
 [2026-04-26 01:20:56] production.INFO: Application booted  
 [2026-04-26 01:21:02] production.INFO: Application booted  
 [2026-04-26 01:21:08] production.INFO: Application booted  
+[2026-04-26 15:20:45] production.INFO: Application booted  
+[2026-04-26 15:21:04] production.INFO: Application booted  
+[2026-04-26 15:21:08] production.INFO: Application booted  
+[2026-04-26 15:58:25] production.INFO: Application booted  
+[2026-04-26 16:28:41] production.INFO: Application booted  
+[2026-04-26 16:30:18] production.INFO: Application booted  
+[2026-04-26 16:30:19] production.INFO: Application booted  
+[2026-04-26 16:30:55] production.INFO: Application booted  
+[2026-04-26 16:34:42] production.INFO: Application booted  
+[2026-04-26 16:40:17] production.INFO: Application booted  
+[2026-04-26 16:41:23] production.INFO: Application booted  
+[2026-04-26 16:47:45] production.INFO: Application booted  
+[2026-04-26 16:47:52] production.INFO: Application booted  
+[2026-04-26 16:48:38] production.INFO: Application booted  
+[2026-04-26 16:53:52] production.INFO: Application booted  
+[2026-04-26 16:53:54] production.INFO: Application booted  
+[2026-04-26 16:54:04] production.INFO: Application booted  
+[2026-04-26 16:55:39] production.INFO: Application booted  
+[2026-04-26 16:56:12] production.INFO: Application booted  
+[2026-04-26 16:57:18] production.INFO: Application booted  
+[2026-04-26 16:57:41] production.INFO: Application booted  
+[2026-04-26 16:58:41] production.INFO: Application booted  
+[2026-04-26 16:58:42] production.ERROR: Maximum execution time of 60 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 60 seconds exceeded at C:/Users/ASUS/Desktop/wtspLLM/vendor/guzzlehttp/guzzle/src/Handler/CurlHandler.php:45)
+[stacktrace]
+#0 {main}
+"} 
+[2026-04-26 16:58:42] production.ERROR: PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 {"exception":"[object] (Psy\\Exception\\ParseErrorException(code: 0): PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 at C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Exception/ParseErrorException.php:44)
+[stacktrace]
+#0 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/CodeCleaner.php(657): Psy/Exception/ParseErrorException::fromParseError(Object(PhpParser/Error))
+#1 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/CodeCleaner.php(273): Psy/CodeCleaner->parse('<?php //=config(...', false)
+#2 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(1358): Psy/CodeCleaner->clean(Array, false)
+#3 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(1465): Psy/Shell->appendCode('//=config('servi...', true, false)
+#4 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(2173): Psy/Shell->setCode('//=config('servi...', true)
+#5 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/tinker/src/Console/TinkerCommand.php(77): Psy/Shell->execute('//=config('servi...')
+#6 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Laravel/Tinker/Console/TinkerCommand->handle()
+#7 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#8 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#9 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#10 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/Container.php(696): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#11 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate/Container/Container->call(Array)
+#12 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#13 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#14 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#15 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Laravel/Tinker/Console/TinkerCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/Users/ASUS/Desktop/wtspLLM/artisan(19): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 {main}
+"} 
+[2026-04-26 16:58:44] production.INFO: Application booted  
+[2026-04-26 16:58:44] production.ERROR: PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 {"exception":"[object] (Psy\\Exception\\ParseErrorException(code: 0): PHP Parse error: Syntax error, unexpected T_NS_SEPARATOR on line 1 at C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Exception/ParseErrorException.php:44)
+[stacktrace]
+#0 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/CodeCleaner.php(657): Psy/Exception/ParseErrorException::fromParseError(Object(PhpParser/Error))
+#1 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/CodeCleaner.php(273): Psy/CodeCleaner->parse('<?php //=config(...', false)
+#2 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(1358): Psy/CodeCleaner->clean(Array, false)
+#3 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(1465): Psy/Shell->appendCode('//=config('servi...', true, false)
+#4 C:/Users/ASUS/Desktop/wtspLLM/vendor/psy/psysh/src/Shell.php(2173): Psy/Shell->setCode('//=config('servi...', true)
+#5 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/tinker/src/Console/TinkerCommand.php(77): Psy/Shell->execute('//=config('servi...')
+#6 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Laravel/Tinker/Console/TinkerCommand->handle()
+#7 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::Illuminate/Container/{closure}()
+#8 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(95): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#9 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#10 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Container/Container.php(696): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#11 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Console/Command.php(213): Illuminate/Container/Container->call(Array)
+#12 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#13 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Console/Command.php(182): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#14 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#15 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Laravel/Tinker/Console/TinkerCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 C:/Users/ASUS/Desktop/wtspLLM/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 C:/Users/ASUS/Desktop/wtspLLM/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/Users/ASUS/Desktop/wtspLLM/artisan(19): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#19 {main}
+"} 
+[2026-04-26 17:00:06] production.INFO: Application booted  
+[2026-04-26 17:00:13] production.INFO: Application booted  
+[2026-04-26 17:03:46] production.INFO: Application booted  
+[2026-04-26 17:03:55] production.INFO: Application booted  
+[2026-04-26 17:12:27] production.INFO: Application booted  
+[2026-04-26 17:12:51] production.INFO: Application booted  
+[2026-04-26 17:20:40] production.INFO: Application booted  
+[2026-04-26 17:20:44] production.INFO: Application booted  
+[2026-04-26 17:21:49] production.INFO: Application booted  
+[2026-04-26 17:23:46] production.INFO: Application booted  
+[2026-04-26 17:24:14] production.INFO: Application booted  
+[2026-04-26 17:30:15] production.INFO: Application booted  
